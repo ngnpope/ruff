@@ -40,6 +40,7 @@ override_default.py:6:8: ICN001 `pandas` should be imported as `pd`
 6 | import pandas  # unconventional
   |        ^^^^^^ ICN001
 7 | import seaborn  # unconventional
+8 | import sqlalchemy  # unconventional
   |
   = help: Alias `pandas` to `pd`
 
@@ -49,62 +50,83 @@ override_default.py:7:8: ICN001 `seaborn` should be imported as `sns`
 6 | import pandas  # unconventional
 7 | import seaborn  # unconventional
   |        ^^^^^^^ ICN001
-8 | 
-9 | import altair as altr  # unconventional
+8 | import sqlalchemy  # unconventional
   |
   = help: Alias `seaborn` to `sns`
 
-override_default.py:9:18: ICN001 `altair` should be imported as `alt`
+override_default.py:8:8: ICN001 `sqlalchemy` should be imported as `sa`
    |
+ 6 | import pandas  # unconventional
  7 | import seaborn  # unconventional
- 8 | 
- 9 | import altair as altr  # unconventional
+ 8 | import sqlalchemy  # unconventional
+   |        ^^^^^^^^^^ ICN001
+ 9 | 
+10 | import altair as altr  # unconventional
+   |
+   = help: Alias `sqlalchemy` to `sa`
+
+override_default.py:10:18: ICN001 `altair` should be imported as `alt`
+   |
+ 8 | import sqlalchemy  # unconventional
+ 9 | 
+10 | import altair as altr  # unconventional
    |                  ^^^^ ICN001
-10 | import matplotlib.pyplot as plot  # unconventional
-11 | import numpy as np  # unconventional
+11 | import matplotlib.pyplot as plot  # unconventional
+12 | import numpy as np  # unconventional
    |
    = help: Alias `altair` to `alt`
 
-override_default.py:10:29: ICN001 `matplotlib.pyplot` should be imported as `plt`
+override_default.py:11:29: ICN001 `matplotlib.pyplot` should be imported as `plt`
    |
- 9 | import altair as altr  # unconventional
-10 | import matplotlib.pyplot as plot  # unconventional
+10 | import altair as altr  # unconventional
+11 | import matplotlib.pyplot as plot  # unconventional
    |                             ^^^^ ICN001
-11 | import numpy as np  # unconventional
-12 | import pandas as pdas  # unconventional
+12 | import numpy as np  # unconventional
+13 | import pandas as pdas  # unconventional
    |
    = help: Alias `matplotlib.pyplot` to `plt`
 
-override_default.py:11:17: ICN001 `numpy` should be imported as `nmp`
+override_default.py:12:17: ICN001 `numpy` should be imported as `nmp`
    |
- 9 | import altair as altr  # unconventional
-10 | import matplotlib.pyplot as plot  # unconventional
-11 | import numpy as np  # unconventional
+10 | import altair as altr  # unconventional
+11 | import matplotlib.pyplot as plot  # unconventional
+12 | import numpy as np  # unconventional
    |                 ^^ ICN001
-12 | import pandas as pdas  # unconventional
-13 | import seaborn as sbrn  # unconventional
+13 | import pandas as pdas  # unconventional
+14 | import seaborn as sbrn  # unconventional
    |
    = help: Alias `numpy` to `nmp`
 
-override_default.py:12:18: ICN001 `pandas` should be imported as `pd`
+override_default.py:13:18: ICN001 `pandas` should be imported as `pd`
    |
-10 | import matplotlib.pyplot as plot  # unconventional
-11 | import numpy as np  # unconventional
-12 | import pandas as pdas  # unconventional
+11 | import matplotlib.pyplot as plot  # unconventional
+12 | import numpy as np  # unconventional
+13 | import pandas as pdas  # unconventional
    |                  ^^^^ ICN001
-13 | import seaborn as sbrn  # unconventional
+14 | import seaborn as sbrn  # unconventional
+15 | import sqlalchemy as sqla  # unconventional
    |
    = help: Alias `pandas` to `pd`
 
-override_default.py:13:19: ICN001 `seaborn` should be imported as `sns`
+override_default.py:14:19: ICN001 `seaborn` should be imported as `sns`
    |
-11 | import numpy as np  # unconventional
-12 | import pandas as pdas  # unconventional
-13 | import seaborn as sbrn  # unconventional
+12 | import numpy as np  # unconventional
+13 | import pandas as pdas  # unconventional
+14 | import seaborn as sbrn  # unconventional
    |                   ^^^^ ICN001
-14 | 
-15 | import altair as alt  # conventional
+15 | import sqlalchemy as sqla  # unconventional
    |
    = help: Alias `seaborn` to `sns`
+
+override_default.py:15:22: ICN001 `sqlalchemy` should be imported as `sa`
+   |
+13 | import pandas as pdas  # unconventional
+14 | import seaborn as sbrn  # unconventional
+15 | import sqlalchemy as sqla  # unconventional
+   |                      ^^^^ ICN001
+16 | 
+17 | import altair as alt  # conventional
+   |
+   = help: Alias `sqlalchemy` to `sa`
 
 

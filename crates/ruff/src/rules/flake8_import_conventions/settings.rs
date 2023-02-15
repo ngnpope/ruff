@@ -19,6 +19,7 @@ const CONVENTIONAL_ALIASES: &[(&str, &str)] = &[
     ("plotly.express", "px"),
     ("polars", "pl"),
     ("pyarrow", "pa"),
+    ("sqlalchemy", "sa"),
 ];
 
 #[derive(
@@ -32,7 +33,7 @@ const CONVENTIONAL_ALIASES: &[(&str, &str)] = &[
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub struct Options {
     #[option(
-        default = r#"{"altair": "alt", "matplotlib": "mpl", "matplotlib.pyplot": "plt", "numpy": "np", "pandas": "pd", "seaborn": "sns", "tensorflow": "tf", "tkinter":  "tk", "holoviews": "hv", "panel": "pn", "plotly.express": "px", "polars": "pl", "pyarrow": "pa"}"#,
+        default = r#"{"altair": "alt", "matplotlib": "mpl", "matplotlib.pyplot": "plt", "numpy": "np", "pandas": "pd", "seaborn": "sns", "tensorflow": "tf", "tkinter":  "tk", "holoviews": "hv", "panel": "pn", "plotly.express": "px", "polars": "pl", "pyarrow": "pa", "sqlalchemy": "sa"}"#,
         value_type = "dict[str, str]",
         example = r#"
             [tool.ruff.flake8-import-conventions.aliases]

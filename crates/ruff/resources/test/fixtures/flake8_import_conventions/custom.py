@@ -14,6 +14,7 @@ import plotly.express  # unconventional
 import matplotlib  # unconventional
 import polars  # unconventional
 import pyarrow  # unconventional
+import sqlalchemy  # unconventional
 
 import altair as altr  # unconventional
 import matplotlib.pyplot as plot  # unconventional
@@ -29,6 +30,7 @@ import plotly.express as pltx  # unconventional
 import matplotlib as ml  # unconventional
 import polars as ps # unconventional
 import pyarrow as arr  # unconventional
+import sqlalchemy as sqla  # unconventional
 
 import altair as alt  # conventional
 import dask.array as da  # conventional
@@ -44,5 +46,6 @@ import plotly.express as px  # conventional
 import matplotlib as mpl  # conventional
 import polars as pl # conventional
 import pyarrow as pa  # conventional
+import sqlalchemy as sa  # conventional
 
 from tensorflow.keras import Model  # conventional
